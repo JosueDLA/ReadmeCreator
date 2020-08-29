@@ -1,0 +1,155 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #efefef;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    color: blue;
+    transition: 0.5s;
+}
+
+a:hover, a:active, a:focus{
+    color: blue;
+    outline: none;
+    text-decoration: none;
+}
+
+p{
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Monserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+/* Templates */
+
+
+/* Jumbotron */
+.jumbotron{
+    color: #fff;
+    background: #171916;
+}
+
+.jumbotron .container{
+    padding: 1rem;
+}
+
+.jumbotron p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* GitHub Corner */
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+
+/* Carousel */
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+    transform: translateX(0);
+}
+
+.carousel-indicators li {
+    background-color: #999;
+    background-color: rgba(70, 70, 70, 0.25);
+}
+  
+.carousel-indicators .active {
+    background-color: #444;
+}
+
+/* Text Area */
+#TextArea{
+    background: #171916;
+    color: #fff;
+}
+
+#TextArea textarea{
+    border-radius: 0.25rem;
+    width: 100%;
+    padding: 1.5rem;
+    resize: none;
+    outline:0;
+    border:none;
+    overflow-y: hidden;
+}
+
+footer{
+    background: #171916;
+    color: #fff;
+}
