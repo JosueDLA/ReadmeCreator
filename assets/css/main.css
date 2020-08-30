@@ -12,12 +12,10 @@ body{
 }
 
 a{
-    color: blue;
     transition: 0.5s;
 }
 
 a:hover, a:active, a:focus{
-    color: blue;
     outline: none;
     text-decoration: none;
 }
@@ -34,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-h1, h2{
+h1{
     text-align: center;
     font-size: 2.5rem;
 }
@@ -60,18 +58,15 @@ h1, h2{
 }
 
 @keyframes octocat-wave {
-    0%,
-    100% {
+    0%, 100% {
         transform: rotate(0)
     }
 
-    20%,
-    60% {
+    20%, 60% {
         transform: rotate(-25deg)
     }
 
-    40%,
-    80% {
+    40%, 80% {
         transform: rotate(10deg)
     }
 }
@@ -87,7 +82,6 @@ h1, h2{
 }
 
 /* Carousel */
-
 @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
         display: none;
@@ -107,12 +101,12 @@ h1, h2{
 @media (min-width: 768px) {
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
-      transform: translateX(33.333%);
+        transform: translateX(33.333%);
     }
     
     .carousel-inner .carousel-item-left.active, 
     .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.333%);
+        transform: translateX(-33.333%);
     }
 }
 
@@ -149,15 +143,28 @@ h1, h2{
 #output{
     background-color: #fff;
     border-radius: 0.25rem;
+    position:relative;
     color: #000;
+    padding-bottom: 3rem;
 }
 
-#output h1, #output h2 {
+#output h1{
     text-align: left;
+}
+
+.download{
+    text-align: center;
+    position: absolute;
+    max-height: 7rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Footer */
 footer{
     background: #171916;
-    color: #fff;
+    color: #fff;  
 }
