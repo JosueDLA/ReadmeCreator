@@ -32,15 +32,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
-    text-align: center;
 }
 
-h1{
+h1, h2{
+    text-align: center;
     font-size: 2.5rem;
 }
-
-/* Templates */
-
 
 /* Jumbotron */
 .jumbotron{
@@ -139,16 +136,27 @@ h1{
     color: #fff;
 }
 
-#TextArea textarea{
+#TextArea textarea, #TextArea #output{
     border-radius: 0.25rem;
     width: 100%;
     padding: 1.5rem;
     resize: none;
-    outline:0;
     border:none;
+    outline: 0;
     overflow-y: hidden;
 }
 
+#output{
+    background-color: #fff;
+    border-radius: 0.25rem;
+    color: #000;
+}
+
+#output h1, #output h2 {
+    text-align: left;
+}
+
+/* Footer */
 footer{
     background: #171916;
     color: #fff;

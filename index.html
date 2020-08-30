@@ -6,11 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap, FontAwesome -->
-    <!-- Bootstrap, FontAwesome -->
+    <!-- Bootstrap, FontAwesome, Markdown css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/964c4e77ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
+        integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg=="
+        crossorigin="anonymous" />
 
     <!-- Main Css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -71,49 +74,49 @@
 
             <div class="carousel-inner w-100" role="listbox">
                 <div class="carousel-item active">
-                    <div class="col-md-4 col-12 ">
+                    <div class="col-md-4 col-12">
                         <div class="card card-body h-100">
-                            <img class="card-img-top" src="http://placehold.it/380?text=1">
+                            <img class="card-img-top" src="https://placehold.it/380?text=1">
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <div class="col-md-4 col-12 ">
+                    <div class="col-md-4 col-12">
                         <div class="card card-body h-100">
-                            <img class="card-img-top" src="http://placehold.it/380?text=2">
+                            <img class="card-img-top" src="https://placehold.it/380?text=2">
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <div class="col-md-4 col-12 ">
+                    <div class="col-md-4 col-12">
                         <div class="card card-body h-100">
-                            <img class="card-img-top" src="http://placehold.it/380?text=3">
+                            <img class="card-img-top" src="https://placehold.it/380?text=3">
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <div class="col-md-4 col-12 ">
+                    <div class="col-md-4 col-12">
                         <div class="card card-body h-100">
-                            <img class="card-img-top" src="http://placehold.it/380?text=4">
+                            <img class="card-img-top" src="https://placehold.it/380?text=4">
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <div class="col-md-4 col-12 ">
+                    <div class="col-md-4 col-12">
                         <div class="card card-body h-100">
-                            <img class="card-img-top" src="http://placehold.it/380?text=5">
+                            <img class="card-img-top" src="https://placehold.it/380?text=5">
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <div class="col-md-4 col-12 ">
+                    <div class="col-md-4 col-12">
                         <div class="card card-body h-100">
-                            <img class="card-img-top" src="http://placehold.it/380?text=6">
+                            <img class="card-img-top" src="https://placehold.it/380?text=6">
                         </div>
                     </div>
                 </div>
@@ -128,12 +131,13 @@
         <h1 class="pt-4">Create your own README</h1>
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12 col-12 mb-4">
-                <h2>README</h2>
-                <textarea id=""></textarea>
+                <h2>Markdown</h2>
+                <textarea id="markdown"></textarea>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 col-12 mb-4">
                 <h2>Output</h2>
-                <textarea id=""></textarea>
+                <div id="output" class="markdown-body p-4">
+                </div>
             </div>
         </div>
     </div>
@@ -148,7 +152,7 @@
     <!-- End Footer -->
 
     <!-- Optional JavaScript -->
-    <!-- jQuery, Popper, Bootstrap -->
+    <!-- jQuery, Popper, Bootstrap, Autosize, Markdown-it -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -162,6 +166,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.0/autosize.min.js"
         integrity="sha256-F7Bbc+3hGv34D+obsHHsSm3ZKRBudWR7e2H0fS0beok=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.0/markdown-it.min.js"
+        integrity="sha512-0tDdhRf9dcDufaaOQQdvywK56y+cwomy6rjOrqk05N61cQOTdO2Cqqgq8EfXVBDXJe0TH9smqvDicQzMiBG14g=="
+        crossorigin="anonymous"></script>
 
     <script src="./assets/js/app.js"></script>
 </body>

@@ -20,4 +20,13 @@ $('.carousel .carousel-item').each(function () {
     }
 });
 
-autosize(document.querySelector('textarea'));
+//Markdown-it Render
+var md = window.markdownit();
+var output = document.querySelector('#output');
+output.innerHTML = md.render(document.querySelector('#markdown').textContent);
+
+document.querySelector('#markdown').addEventListener('keyup', function (e) {
+    output.innerHTML = md.render(e.target.value);
+});
+
+autosize(document.querySelector('#markdown'));
