@@ -29,6 +29,27 @@ function loadFile(file, md) {
     };
 }
 
+/* Download Files */
+function downloadFile(content, name) {
+    let file = new Blob([content], { type: 'text/plain' });
+    let link = document.createElement('a');
+    link.download = name;
+    link.innerHTML = "Download";
+
+    if (window.webkitURL != null) {
+        //For Chrome
+        link.href = window.webkitURL.createObjectURL(file);
+    }
+    else {
+        //For Other Browsers
+        link.href = window.URL.createObjectURL(file);
+        link.onclick = destroyClickedElement;
+        link.style.display = 'none';
+        document.body.appendChild(link);
+    }
+    link.click();
+}
+
 /* Carousel */
 $('#templates').carousel({
     interval: 10000
