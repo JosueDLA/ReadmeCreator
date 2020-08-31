@@ -1,5 +1,8 @@
 /* Markdown Render */
 window.onload = function () {
+    /* Cards */
+    loadCards();
+
     let md = window.markdownit();
     loadFile('./docs/Basic-readme-en.md', md);
 
@@ -8,6 +11,76 @@ window.onload = function () {
     });
 }
 
+/* Load Cards */
+function loadCards() {
+    let fileUrl = './docs/Files.json';
+    let files = new XMLHttpRequest();
+    files.open('GET', fileUrl, true);
+    files.send();
+
+    files.onreadystatechange = function () {
+        if (this.status == 200 && this.readyState == 4) {
+            let data = JSON.parse(this.responseText);
+
+            let cards = document.querySelector('#cards');
+            let indicators = document.querySelector('#indicators');
+
+            for (let i = 0; i < data.length; i++) {
+                let content = `
+                    <div class="col-md-4 col-12">
+                        <div class="card text-white bg-dark h-100">
+                            <div class="card-header"> ${data[i].language} </div>
+                            <div class="card-body">
+                                <h5 class="card-title"> ${data[i].title} </h5>
+                                <p class="card-text"> ${data[i].description} </p>
+                                <button id="btn${data[i].idid}" class="btn btn-primary">Load</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `;
+
+                if (i == 0) {
+                    indicators.innerHTML += `<li data-targer="#templates" data-slide-to="${i}" class="active"></li>`;
+                    cards.innerHTML += '<div class="carousel-item active">' + content;
+                }
+                else {
+                    indicators.innerHTML += `<li data-targer="#templates" data-slide-to="${i}"></li>`;
+                    cards.innerHTML += '<div class="carousel-item">' + content;
+                }
+
+            }
+            carousel();
+        }
+    };
+}
+
+/* Carousel */
+function carousel() {
+    $('#templates').carousel({
+        interval: 10000
+    });
+
+    $('.carousel .carousel-item').each(function () {
+        var minPerSlide = 3;
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        for (var i = 0; i < minPerSlide; i++) {
+            next = next.next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+        }
+    });
+}
+
+/* Load Files */
 function loadFile(file, md) {
     let raw = new XMLHttpRequest();
     raw.open('GET', file, true);
@@ -49,26 +122,3 @@ function downloadFile(content, name) {
     }
     link.click();
 }
-
-/* Carousel */
-$('#templates').carousel({
-    interval: 10000
-});
-
-$('.carousel .carousel-item').each(function () {
-    var minPerSlide = 3;
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    for (var i = 0; i < minPerSlide; i++) {
-        next = next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-
-        next.children(':first-child').clone().appendTo($(this));
-    }
-});
