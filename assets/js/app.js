@@ -4,7 +4,7 @@ window.onload = function () {
     loadCards();
 
     let md = window.markdownit();
-    loadFile('./docs/Basic-readme-en.md', md);
+    loadFile('./docs/Basic-readme-en.md');
 
     document.querySelector('#markdown').addEventListener('keyup', function (e) {
         output.innerHTML = md.render(e.target.value);
@@ -33,7 +33,7 @@ function loadCards() {
                             <div class="card-body">
                                 <h5 class="card-title"> ${data[i].title} </h5>
                                 <p class="card-text"> ${data[i].description} </p>
-                                <button id="btn${data[i].idid}" class="btn btn-primary">Load</button>
+                                <button id="${data[i].file}" class="btn btn-primary load-readme">Load</button>
                             </div>
                         </div>
                     </div>
@@ -50,9 +50,19 @@ function loadCards() {
                 }
 
             }
+            addButtonEvents();
             carousel();
         }
     };
+}
+
+/* Add Button Events */
+function addButtonEvents() {
+    document.querySelectorAll('.load-readme').forEach(function (element) {
+        element.addEventListener('click', function () {
+            loadFile(this.id);
+        })
+    });
 }
 
 /* Carousel */
@@ -62,8 +72,9 @@ function carousel() {
     });
 
     $('.carousel .carousel-item').each(function () {
-        var minPerSlide = 3;
-        var next = $(this).next();
+        let minPerSlide = 3;
+        let next = $(this).next();
+        console.log(next);
         if (!next.length) {
             next = $(this).siblings(':first');
         }
@@ -81,7 +92,9 @@ function carousel() {
 }
 
 /* Load Files */
-function loadFile(file, md) {
+function loadFile(file) {
+    console.log(file);
+    let md = window.markdownit();
     let raw = new XMLHttpRequest();
     raw.open('GET', file, true);
     raw.send();

@@ -4,13 +4,13 @@
         "file": "./docs/Basic-readme-en.md",
         "title": "Generic Readme",
         "language": "English",
-        "description": "desc"
+        "description": "Basic Readme"
     },
     {
         "id": 2,
         "file": "./docs/Basic-readme-es.md",
         "title": "Generic Readme",
-        "language": "Spanish",
-        "description": "desc"
+        "language": "Español",
+        "description": "Readme básico"
     }
 ]
