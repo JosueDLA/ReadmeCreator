@@ -19,5 +19,12 @@
         "title": "Personal Readme",
         "language": "English",
         "description": "Personal Readme"
+    },
+    {
+        "id": 4,
+        "file": "./docs/Personal-readme-es.md",
+        "title": "Personal Readme",
+        "language": "Español",
+        "description": "Readme personal"
     }
 ]
