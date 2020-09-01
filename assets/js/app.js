@@ -107,10 +107,10 @@ function loadFile(file) {
             let output = document.querySelector('#output');
 
             //Markdown-it Render
-            textArea.innerHTML = text;
+            textArea.value = text;
             output.innerHTML = md.render(text);
 
-            autosize(document.querySelector('#markdown'));
+            autosize(textArea);
         }
     };
 }
