@@ -114,15 +114,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(0);
 }
 
-.carousel-indicators li {
-    background-color: #999;
-    background-color: rgba(70, 70, 70, 0.25);
-}
-  
-.carousel-indicators .active {
-    background-color: #444;
-}
-
 /* Text Area */
 #TextArea{
     background: #171916;

@@ -33,7 +33,7 @@ function loadCards() {
                             <div class="card-body">
                                 <h5 class="card-title"> ${data[i].title} </h5>
                                 <p class="card-text"> ${data[i].description} </p>
-                                <button id="${data[i].file}" class="btn btn-primary load-readme">Load</button>
+                                <button id="${data[i].file}" class="btn btn-primary" onClick="loadFile(this.id);">Load</button>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ function loadCards() {
                 }
 
             }
-            addButtonEvents();
+            //addButtonEvents();
             carousel();
         }
     };
@@ -67,6 +67,7 @@ function addButtonEvents() {
 
 /* Carousel */
 function carousel() {
+
     $('#templates').carousel({
         interval: 10000
     });
@@ -74,13 +75,13 @@ function carousel() {
     $('.carousel .carousel-item').each(function () {
         let minPerSlide = 3;
         let next = $(this).next();
-        console.log(next);
+
         if (!next.length) {
             next = $(this).siblings(':first');
         }
         next.children(':first-child').clone().appendTo($(this));
 
-        for (var i = 0; i < minPerSlide; i++) {
+        for (var i = 2; i < minPerSlide; i++) {
             next = next.next();
             if (!next.length) {
                 next = $(this).siblings(':first');
@@ -93,7 +94,6 @@ function carousel() {
 
 /* Load Files */
 function loadFile(file) {
-    console.log(file);
     let md = window.markdownit();
     let raw = new XMLHttpRequest();
     raw.open('GET', file, true);
