@@ -3,7 +3,7 @@ window.onload = function () {
     /* Cards */
     loadCards();
 
-    let md = window.markdownit();
+    let md = window.markdownit({ html: true });
     loadFile('./docs/Basic-readme-en.md');
 
     document.querySelector('#markdown').addEventListener('keyup', function (e) {
