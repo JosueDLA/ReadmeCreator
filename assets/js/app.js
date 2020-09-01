@@ -110,7 +110,8 @@ function loadFile(file) {
             textArea.value = text;
             output.innerHTML = md.render(text);
 
-            autosize(textArea);
+            autosize(document.querySelector('#markdown'));
+            autosize.update(textArea);
         }
     };
 }
