@@ -94,7 +94,7 @@ function carousel() {
 
 /* Load Files */
 function loadFile(file) {
-    let md = window.markdownit();
+    let md = window.markdownit({ html: true });
     let raw = new XMLHttpRequest();
     raw.open('GET', file, true);
     raw.send();
