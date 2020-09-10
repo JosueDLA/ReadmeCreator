@@ -27,7 +27,7 @@
 [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="LinkedIn" align="left" height="22px">][linkedin]
 [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" alt="YouTube" align="left" height="22px">][youtube]
 [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitch.svg" alt="Twitch" align="left" height="22px" >][twitch]
-</br>
+<br />
 
 ## Languages and Tools
 
@@ -51,7 +51,7 @@
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/c/c.png" alt="C" align="left" height="30px" style="padding: 5px;">
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/objective-c/objective-c.png" alt="Objective-C" align="left" height="30px" style="padding: 5px;">
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-basic/visual-basic.png" alt="VB" align="left" height="30px" style="padding: 5px;">
-</br>
+<br />
 
 ### Frameworks / Libraries
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React" align="left" height="30px" style="padding: 5px;">
@@ -66,7 +66,7 @@
 <img src="https://raw.githubusercontent.com/github/explore/56a826d05cf762b2b50ecbe7d492a839b04f3fbf/topics/laravel/laravel.png" alt="Laravel" align="left" height="30px" style="padding: 5px;">
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jquery/jquery.png" alt="jQuery" align="left" height="30px" style="padding: 5px;">
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" alt="Bootstrap" align="left" height="30px" style="padding: 5px;">
-</br>
+<br />
 
 ### Tools
 
@@ -82,7 +82,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/1024px-Android_Studio_icon.svg.png" alt="Android Studio" align="left" height="30px" style="padding: 5px;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Trello-logo-blue.svg/1024px-Trello-logo-blue.svg.png" alt="Trello" align="left" height="30px" style="padding: 5px;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Apache_NetBeans_Logo.svg/1200px-Apache_NetBeans_Logo.svg.png" alt="Netbeans" align="left" height="30px" style="padding: 5px;">
-</br>
+<br />
 
 ### Platforms
 
@@ -99,7 +99,7 @@
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/azure/azure.png" alt="Azure" align="left" height="30px" style="padding: 5px;">
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/google/google.png" alt="Google Cloud" align="left" height="30px" style="padding: 5px;">
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/wordpress/wordpress.png" alt="Wordpress" align="left" height="30px" style="padding: 5px;">
-</br>
+<br />
 
 ## Stats
 
