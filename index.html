@@ -112,22 +112,24 @@
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12 col-12 mb-4" style="position: relative; padding-bottom: 8rem;">
                 <h2 class="text-center">Markdown</h2>
+                <button class="btn btn-link" onClick="clearText()">Clear</button>
                 <textarea id="markdown"></textarea>
                 <div class="download">
-                    <h3>Save README.md</h3>
+                    <h4>Save README.md</h4>
                     <button id="markdownBtn" class="btn btn-dark"
-                        onclick="downloadFile(markdown.value, 'markdown.md')">Download</button>
+                        onClick="downloadFile(markdown.value, 'markdown.md')">Download</button>
                 </div>
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 col-12 mb-4" style="position: relative; padding-bottom: 8rem;">
                 <h2 class="text-center">Output</h2>
+                <button class="btn btn-link" style="color:transparent; cursor:default;">Test</button>
                 <div id="output" class="markdown-body p-4">
                 </div>
                 <div class="download">
-                    <h3>Save HTML output</h3>
+                    <h4>Save HTML output</h4>
                     <button id="htmlBtn" class="btn btn-dark"
-                        onclick="downloadFile(output.innerHTML, 'markdown.html')">Download</button>
+                        onClick="downloadFile(output.innerHTML, 'markdown.html')">Download</button>
                 </div>
             </div>
         </div>

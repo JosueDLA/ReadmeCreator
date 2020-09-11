@@ -65,6 +65,16 @@ function addButtonEvents() {
     });
 }
 
+/* Clear TextArea */
+function clearText() {
+    let textArea = document.querySelector('#markdown');
+    let output = document.querySelector('#output');
+
+    textArea.value = '';
+    output.innerHTML = '';
+    autosize.update(textArea);
+}
+
 /* Carousel */
 function carousel() {
 
